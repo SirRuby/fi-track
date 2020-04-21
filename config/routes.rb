@@ -8,4 +8,5 @@ get 'search_stock', to: 'stocks#search'
 get 'my_friendships', to: 'users#my_friendships'
 get 'search_friend', to: 'users#search'
 resources :friendships, only: [:create, :destroy]
+resources :users, only: [:show]
 end
